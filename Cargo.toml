@@ -1,0 +1,10 @@
+[package]
+name = "tui-music-player"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0"
+crossterm = "0.28"
+ratatui = "0.29"
+rodio = { version = "0.19", default-features = true }
