@@ -1,0 +1,17 @@
+[package]
+name = "tempo"
+version = "0.1.0"
+edition = "2021"
+description = "A small, gapless, directory-based GTK music player"
+license = "GPL-3.0-or-later"
+
+[dependencies]
+adw = { package = "libadwaita", version = "0.7", features = ["v1_5"] }
+gtk = { package = "gtk4", version = "0.9", features = ["v4_14"] }
+gstreamer = "0.23"
+gstreamer-pbutils = "0.23"
+
+[profile.release]
+lto = true
+strip = true
+
